@@ -1,0 +1,525 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div.ui.loading-message {
+  font-size: 1.4rem;
+}
+
+h1.loading {
+  font-size: 3rem;
+}
+
+div.loading {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+div.loading p {
+  max-width: 250px;
+  text-align: left;
+  line-height: 42px;
+}
+
+div.loading-wrapper {
+  text-align: center;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+div.loading-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  div.loading-wrapper {
+    flex-flow: wrap;
+  }
+
+  div.loading {
+    flex: 1 100%;
+  }
+}
+
+i.loading-icon, div.large.loader.loading-icon {
+  width: 75px;
+}
+
+i.loading-icon.icon { font-size: 2.3em;}
+
+span.label, span.label-results {
+  color: #000000;
+  display: inline-block;
+  padding: .2rem .8rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: .2rem;
+}
+
+span.label.right {
+  margin: .2rem .2rem .2rem 0;
+  border-radius: 0 .25rem 0.25rem 0;
+}
+
+span.label.left {
+  margin: .2rem 0 .2rem .2rem;
+  border-radius: .25rem 0 0 .25rem;
+}
+
+div.field div.ui.label {
+  width: 100px;
+}
+
+div.update-node-row {
+  padding: 5px 0 5px 0;
+}
+
+div.update-node-row p {
+  width: 80px;
+}
+
+.ui.checkbox label {
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.feedback-form.checkbox label  {
+  white-space: pre-line;
+}
+
+/*nav a {*/
+/*  padding: 10px 10px 10px 10px;*/
+/*  color: #efefef;*/
+/*}*/
+
+/*nav a:first-child {*/
+/*  padding: 10px 15px 10px 0;*/
+/*  color: #fff;*/
+/*}*/
+
+/*nav a:first-child:hover, nav a:last-child:hover {*/
+/*  color: #4183c4;*/
+/*}*/
+
+/*nav a:last-child {*/
+/*  padding: 10px 0 10px 10px;*/
+/*}*/
+
+/*nav a.header-right-separator {*/
+/* border-right: 1px solid #fff;*/
+/*}*/
+
+div.results-bar a {
+  font-size: 1.1rem;
+}
+
+div.results-bar {
+  font-size: 1.1rem;
+}
+
+
+.ui.menu.results-bar {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.ui.vertical.menu.resultsMenu {
+  width: 9rem;
+}
+
+header {
+  align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+header a {
+  color: #fff;
+  /*padding: 0.71rem 1.3rem 0.71rem 1.3rem;*/
+  padding: 11px 11px 8.5px 11px;
+  text-decoration: none;
+  border-bottom: 0.17rem solid transparent;
+}
+
+header a.selected {
+  background: hsl(227, 50%, 59%);
+  color: #fff;
+}
+
+header a:hover {
+  background: hsl(227, 50%, 59%);
+  color: #fff;
+}
+
+header a.active {
+  background: hsl(227, 50%, 59%);
+  color: #fff;
+}
+
+.ui.card, .ui.cards.small-cards>.card {
+  width: 131px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+div.small-cards .ui.card.selected {
+  background: #e5f9e7;
+}
+
+div.small-cards a.ui.card:hover {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+div.algorithm-groups div.algorithm-group {
+  padding: 0 0 0.1rem 0;
+}
+
+div.algorithm-group span {
+  color: hsl(211, 13%, 65%);
+}
+
+div.algorithm-group-container {
+  padding: 0 0 .7rem 0;
+}
+
+p.connected {
+  text-transform: uppercase;
+}
+
+div.about-menu div.connection label, div.about-menu table.versions th  {
+  color: hsl(211, 13%, 65%);
+}
+
+div.about-menu div.connection span, div.about-menu table.versions tr {
+  color: hsl(211, 10%, 53%);
+}
+
+div.about-menu table.versions{
+  font-size: .92857143em;
+}
+
+div.about-menu div.connection-list-item div.configure-database {
+  padding: 0.4em 0 .25em .5em;
+}
+
+table.versions {
+  padding: 0 5px 0 5px
+}
+
+div.ui.divider {
+  margin: 0.7rem 0;
+}
+
+div.connection label {
+  width: 7em;
+  display: inline-block;
+  font-size: .92857143em;
+  font-weight: 700;
+}
+
+div.connection-item.update {
+  /*height: 2rem;*/
+}
+
+div.recipe {
+  display: flex;
+  height: 835px;
+}
+
+div.recipe div.left {
+  width: 20rem;
+  min-width: 20rem;
+  background: hsl(214, 15%, 91%);
+  border-radius: 0.3rem 0 0 0;
+  padding: 0.5rem;
+}
+
+div.recipe div.left-right {
+  background: hsl(216, 33%, 97%);
+  border-radius: 0.3rem 0.3rem 0 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+div.recipe div.left-right div.title {
+  margin-bottom: 10px;
+}
+
+div.recipe div.left-right span.title {
+  font-size: 1.5rem;
+}
+
+div.recipe div.left-right div.algorithms {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+div.recipe-body {
+  padding: 10px
+}
+
+div.recipe div.right {
+  flex-grow: 1;
+  padding: 0.5rem;
+  background: hsl(216, 33%, 97%);
+  border-radius: 0 0.3rem 0 0;
+  overflow: auto;
+}
+
+div.recipe-navigation {
+  padding: 10px;
+  background: hsl(211, 12%, 43%);
+  border-radius: 0 0 0.3rem 0.3rem;
+  color: hsl(216, 33%, 97%);
+  text-align: center;
+}
+
+div.recipe-navigation i {
+  margin: 10px;
+  cursor: pointer;
+}
+
+div.recipe-navigation i.disabled {
+  margin: 10px;
+  cursor: auto;
+}
+
+div.recipe-navigation span {
+  vertical-align: middle;
+}
+
+div.top-level-container {
+  padding: 0 10px;
+}
+
+div.algorithm-item {
+  position: relative;
+  padding: 10px;
+  background: hsl(216, 33%, 97%);
+  border-radius: 5px;
+  margin: 20px 10px 20px 10px;
+}
+
+div.algorithm-item a {
+  color: hsl(234, 62%, 26%);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+div.algorithm-item button.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+  background: hsl(356, 75%, 53%);
+  color: #fff;
+}
+
+div.algorithm-item .ui.icon.button {
+  padding: 0.5rem;
+}
+
+div.algorithm-item button.close:hover {
+  background: hsl(352, 90%, 35%);
+  color: #fff;
+}
+
+div.algorithm-detail label {
+  width: 12em;
+  display: inline-block;
+  font-size: .92857143em;
+  color: hsl(211, 12%, 43%);
+  font-weight: 400;
+}
+
+div.algorithm-detail div, div.configure-database {
+  font-size: .92857143em;
+  color: hsl(211, 12%, 43%);
+  font-weight: 500;
+}
+
+div.algorithm-item p.start-time {
+  font-weight: 300;
+  color: hsl(211, 10%, 53%);
+  font-style: italic;
+}
+
+div.algorithm-item:hover {
+  background: hsl(214, 15%, 91%);
+}
+
+div.algorithm-item:hover > button.close {
+  display: block;
+}
+
+.ui.back-to-algorithms.button {
+  background: hsl(227, 50%, 59%);
+  color: #fff;
+}
+
+.ui.new-algorithm.button {
+  background: hsl(123, 57%, 45%);
+  color: #fff;
+}
+
+.ui.try-recipe.button {
+  background: hsl(228, 45%, 45%);
+  color: #fff;
+}
+
+div.page-heading {
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 10px;
+  /*border: 1px solid black;*/
+  background: hsl(216, 33%, 97%);
+  color: hsl(211, 13%, 65%);
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.ui.label {
+  background-color: hsl(214, 15%, 91%);
+}
+
+.ui.segment {
+  border: 1px solid hsl(214, 15%, 91%);
+}
+
+nav.top-nav {
+  background: hsl(221, 78%, 86%);
+  padding: 5px;
+  display: flex;
+}
+
+span.recipe-heading {
+  text-transform: uppercase;
+  color: hsl(211, 10%, 53%);
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 500;
+}
+
+div.recipe div.left p {
+  color: hsl(209, 14%, 37%);
+}
+
+a.about-menu img.ui.image {
+  width: 25px;
+}
+
+a.about-menu div.content a {
+  padding: 3px;
+}
+
+a.about-menu {
+  margin: 0 0 0 0.3rem;
+}
+
+p.intro {
+  font-size: 1.2rem;
+}
+
+.ui.segment.getting-started {
+  border: 1px solid hsl(306, 88%, 37%);
+}
+
+.ui.segment.getting-started .ui.label {
+  background-color: hsl(306, 88%, 37%);
+  color: hsl(294, 100%, 96%);
+}
+
+div.startup-selectDatabase {
+  margin: 1em 0;
+}
+
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+
+
+.scroll-menu-arrow {
+  cursor: pointer;
+}
+
+.scroll-menu-arrow > div.arrow-prev {
+  padding: 0 10px 0 0;
+  color: rgba(0,0,0,.68);
+}
+
+.scroll-menu-arrow > div.arrow-next {
+  padding: 0 0 0 10px;
+  color: rgba(0,0,0,.68);
+
+}
+
+div.select-algorithm {
+  border: hsl(211, 13%, 65%) 1px solid;
+  padding: 7px;
+  margin: 3px;
+  font-size: 0.9rem;
+  color: rgba(0,0,0,.68);
+  border-radius: 0.25rem;
+}
+
+div.select-algorithm:hover {
+  cursor: pointer;
+}
+
+div.select-algorithm:hover, div.select-algorithm:active {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+div.select-algorithm.selected {
+  background: #e5f9e7;
+}
+
+*:focus {
+  outline: 0;
+}
+

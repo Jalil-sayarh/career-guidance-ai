@@ -1,0 +1,183 @@
+{
+  "name": "neo4j-etl-ui",
+  "version": "1.6.0",
+  "description": "Import data from relational databases into Neo4j",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neo-technology/neo4j-etl.git"
+  },
+  "keywords": [],
+  "author": "Neo4j Inc.",
+  "license": "GPL-3.0",
+  "homepage": "https://neo4j.com/developer/neo4j-etl",
+  "main": "dist/index.html",
+  "neo4jDesktop": {
+    "apiVersion": "^1.4.0"
+  },
+  "scripts": {
+    "start": "webpack-dashboard -t 'Neo4j Browser' -- webpack-dev-server --colors --no-info",
+    "starts": "webpack-dashboard -t 'Neo4j Browser' -- webpack-dev-server --https --colors --no-info",
+    "precommit": "lint-staged",
+    "format": "prettier-eslint 'src/**/!(*.min).js' 'src/**/*.jsx' --write",
+    "lint": "eslint --ext .js --ext .jsx ./src",
+    "test": "jest --verbose",
+    "dev": "jest --watch",
+    "build": "rm -rf ./dist && NODE_ENV=\"production\" webpack -p --progress"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,jsx}": [
+        "prettier-eslint --write",
+        "git add"
+      ]
+    }
+  },
+  "babel": {
+    "env": {
+      "start": {
+        "presets": [
+          "react-hmre"
+        ]
+      },
+      "test": {
+        "presets": [
+          "@babel/preset-env",
+          "@babel/preset-react"
+        ]
+      }
+    }
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      ".jsx$",
+      "/e2e_tests/"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|html)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+      "neo4j": "<rootDir>/__mocks__/neo4j.js",
+      "^browser-styles(.*)$": "<rootDir>/src/browser/styles$1",
+      "^browser-components(.*)$": "<rootDir>/src/browser/components$1",
+      "worker-loader": "<rootDir>/__mocks__/workerLoaderMock.js"
+    },
+    "modulePaths": [
+      "<rootDir>/src",
+      "<rootDir>/src/shared"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testRegex": ".*[Tt]est.jsx?$",
+    "verbose": true,
+    "transform": {
+      "^.+\\.jsx$": "babel-jest",
+      "^.+\\.js$": "babel-jest"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/src/test/setupTests.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.3.1",
+    "autoprefixer": "^7.1.4",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-module-resolver": "^3.1.3",
+    "babel-plugin-styled-components": "^1.10.0",
+    "cache-loader": "^2.0.1",
+    "copy-webpack-plugin": "^4.1.1",
+    "core-js": "^2.6.3",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "^4.0.1",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx": "^0.0.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.15.4",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.1.0",
+    "jest-cli": "^24.1.0",
+    "json-loader": "^0.5.7",
+    "ncp": "^2.0.0",
+    "nock": "^9.0.14",
+    "postcss": "^6.0.11",
+    "postcss-loader": "^2.0.5",
+    "postcss-preset-env": "^3.0.2",
+    "precss": "^2.0.0",
+    "prettier-eslint": "^7.1.0",
+    "prettier-eslint-cli": "^4.3.0",
+    "react-addons-test-utils": "^15.0.2",
+    "react-hot-loader": "^1.3.0",
+    "redux-devtools": "^3.2.0",
+    "redux-devtools-dock-monitor": "^1.1.1",
+    "redux-devtools-log-monitor": "^1.0.11",
+    "redux-mock-store": "^1.2.3",
+    "regenerator-runtime": "^0.11.1",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^4.29.1",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dashboard": "^2.1.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.4.0",
+    "ajv": "^5.2.3",
+    "ansi-html": "0.0.7",
+    "ascii-data-table": "^2.1.1",
+    "chroma-js": "^1.3.4",
+    "classnames": "^2.2.5",
+    "dnd-core": "^2.5.1",
+    "file-saver": "^1.3.3",
+    "husky": "^0.14.3",
+    "isomorphic-fetch": "^2.2.1",
+    "jsonic": "^0.3.0",
+    "lint-staged": "^4.1.3",
+    "lodash": "^4.17.11",
+    "lodash.debounce": "^4.0.8",
+    "material-design-icons": "^3.0.1",
+    "neo4j-driver": "^1.7.6",
+    "node-noop": "^1.0.0",
+    "promise-polyfill": "^6.0.2",
+    "raf": "^3.4.0",
+    "react": "^16.6.3",
+    "react-addons-pure-render-mixin": "^15.0.2",
+    "react-dom": "^16.6.3",
+    "react-redux": "^5.0.7",
+    "react-suber": "^1.0.4",
+    "redux": "^3.7.2",
+    "redux-observable": "^0.16.0",
+    "rxjs": "^5.4.2",
+    "save-as": "^0.1.7",
+    "styled-components": "^2.2.1",
+    "suber": "^5.0.1",
+    "swipe-js-iso": "^2.0.4",
+    "typeface-roboto": "0.0.54",
+    "url-parse": "^1.1.9",
+    "uuid": "^3.0.1",
+    "vis": "^4.21.0",
+    "xml2js": "^0.4.19"
+  },
+  "bugs": {
+    "url": "https://github.com/neo4j-contrib/neo4j-etl/issues"
+  }
+}

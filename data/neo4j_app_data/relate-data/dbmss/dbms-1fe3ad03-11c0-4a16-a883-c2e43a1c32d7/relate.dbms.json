@@ -1,0 +1,50 @@
+{
+  "name": "Movie DBMS d335dc73",
+  "description": "",
+  "tags": [
+    "neo4j-desktop-dbms-database-d335dc73-226b-4d2c-8a39-c2e17965f2d4"
+  ],
+  "id": "1fe3ad03-11c0-4a16-a883-c2e43a1c32d7",
+  "metadata": {
+    "neo4jDesktopDbmsDatabases": [
+      {
+        "name": "neo4j",
+        "type": "standard",
+        "aliases": [],
+        "access": "read-write",
+        "address": "localhost:7687",
+        "role": "primary",
+        "writer": true,
+        "requestedStatus": "online",
+        "currentStatus": "online",
+        "statusMessage": "",
+        "default": true,
+        "home": true,
+        "constituents": [],
+        "statistics": {
+          "nodes": 169,
+          "relationships": 250,
+          "labels": 2,
+          "relationshipTypes": 6,
+          "propertyKeys": 8
+        }
+      },
+      {
+        "name": "system",
+        "type": "system",
+        "aliases": [],
+        "access": "read-write",
+        "address": "localhost:7687",
+        "role": "primary",
+        "writer": true,
+        "requestedStatus": "online",
+        "currentStatus": "online",
+        "statusMessage": "",
+        "default": false,
+        "home": false,
+        "constituents": []
+      }
+    ]
+  },
+  "isCustomPathInstallation": false
+}

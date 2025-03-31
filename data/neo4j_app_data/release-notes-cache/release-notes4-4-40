@@ -1,0 +1,42 @@
+
+			
+									<h5>Release Date: 19 December 2024</h5>
+				
+									Neo4j 4.4.40 is a maintenance release with important fixes.
+<h3 class="heading-element">Kernel</h3>
+<ul>
+ 	<li>Fix an error that could result in&nbsp;<code>BTREE index has no value capability</code>&nbsp;errors.</li>
+</ul>
+<div class="markdown-heading">
+<h3 class="heading-element">Cypher</h3>
+</div>
+<ul>
+ 	<li>Add an internal config setting that can be used to disable a query engine optimization, if needed to prevent a rare bug that can occur with certain complex query plans that can manifest itself as a runtime failure with the error message “java.lang.IndexOutOfBoundsException: bitIndex &lt; 0”.</li>
+</ul>
+<div class="markdown-heading">
+<h3 class="heading-element">Browser</h3>
+</div>
+<ul>
+ 	<li>Add analytics events for browser preview</li>
+ 	<li>Adding advertisement tile for the new browser ui</li>
+</ul>
+<div class="markdown-heading">
+<h3 class="heading-element">Misc</h3>
+</div>
+<ul>
+ 	<li>[CVE-2024-47535] Bump netty from 4.1.111.Final to 4.1.115.Final</li>
+</ul>
+<h3><b>Bundled Packages:</b></h3>
+<ul>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">Cypher-Shell 4.4.40</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">labs/apoc-4.4.0.34-core</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">products/bloom-plugin-4.x-2.18.0</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">products/neo4j-graph-data-science-2.6.8</span></li>
+ 	<li style="font-weight: 400;"><span style="font-weight: 400;">products/neo4j-ops-manager-agent-1.11.2</span></li>
+</ul>
+<pre><a href="https://support.neo4j.com/s/article/115013134648-Neo4j-Supported-Versions"><span style="font-weight: 400;">4.4 End of Support is November 30, 2025</span>
+
+</a><a href="https://github.com/neo4j/neo4j/wiki/Neo4j-4.4-changelog"><span style="font-weight: 400;">4.4 Changelog</span>
+
+</a><a href="https://neo4j.com/docs/operations-manual/4.4/"><span style="font-weight: 400;">4.4 Operations manual</span></a></pre>				
+					

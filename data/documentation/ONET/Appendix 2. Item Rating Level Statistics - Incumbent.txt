@@ -1,0 +1,13 @@
+Rating Level Statistics
+
+For each of the domain elements, additional rating level statistics, such as Standard Error and data flags are included to help provide a description of the quality of the data values. Each of the domain files (Education, Training, and Experience, Knowledge, Tasks, Work Activities, Work Context, and Work Styles) has columns to represent these additional values.
+
+The explanations for the Rating Level Statistics columns are explained in the following definitions.
+
+Standard Error - Standard errors were calculated to provide an indication of each estimate’s precision. The standard error is the square root of the variance of the estimate. Statistics with large variances are generally considered less precise than those with small variances.
+
+Upper CI Bound and Lower CI Bound - The standard error was used to define a range (confidence interval) around the estimate. The 95-percent confidence level means that if all possible samples were selected and an estimate of the value and its sampling error were computed for each, then for approximately 95 percent of the samples, the interval would include the “true” average value.
+
+Recommend Suppress - Users are encouraged to use estimates exhibiting “low precision” with caution and for many applications users are advised to consider suppressing these estimates. An estimate is considered to have low precision if any of the following are true: (1) the sample size is less than 10; (2) the variance is 0 and the sample size is less than 15; (3) the relative standard error (RSE) is greater than 0.5. (The RSE of a mean estimate is the ratio of the estimate’s standard error to the estimate itself. To calculate the RSE of the estimates expressed as percentages (e.g., the proportion of respondents who indicated they perform a task once per week), the log transformation of the proportion was used.)
+
+Not Relevant – “Level” estimates were flagged as “not relevant” if more than 75% of item respondents to the corresponding “Importance” item rated the item as “not important”. Users are encouraged to provide their end-users with an indication that the item level rating is “not relevant” rather than displaying the level value or displaying no level information.

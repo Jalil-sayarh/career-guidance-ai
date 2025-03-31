@@ -1,0 +1,541 @@
+O*NET 29.2 Database
+
+1,444 alternate titles related to 546 occupations were added from employer job postings and customer input.
+Updated Survey Booklet Locations and Content Model Reference files reflect changes and edits within the O*NET questionnaires.
+For updated versions of the generic, customizable forms of the questionnaires used in the O*NET Data Collection Program, see O*NET Questionnaires.
+
+O*NET 29.1 Database
+
+Occupational analysts updated the job zone assignments for 21 occupations using the procedures for developing preliminary job zone ratings.
+An updated listing of 170 “Hot Technologies,” based on employer job postings from across all occupations, resulted in 11,600+ occupation linkages.
+Updated “In Demand” technology skill designations, based on employer job postings from within each occupation, led to 2,300+ “In Demand” skill linkages across 487 occupations.
+150+ new technology linkages related to 90 occupations were identified from employer job postings and customer input.
+13 new tools linkages related to 2 occupations were identified from customer input.
+O*NET 29.0 Database
+
+Addition and update of Abilities and Skills data for 101 occupations
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 80 occupations
+Addition and update of Work Activities, Knowledge, and Work Context data for 80 occupations
+Addition and update of Training and Work Experience and Education data for 80 occupations
+Addition and update of Work Styles data for 80 occupations
+Addition and update of Job Zones data for 80 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 42 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 80 occupations
+Beginning with the 29.0 release, task statements are considered relevant and retained as part of an occupation’s task statement list if they have a relevance rating of 25% or higher. The minimum relevance in previous releases was 10%. This impacts the 80 occupations with updated task ratings, as well as 466 task statements across an additional 228 occupations.
+
+O*NET 28.3 Database
+
+An updated listing of 168 “Hot Technologies,” based on employer job postings from across all occupations, resulted in 11,500+ occupation linkages.
+Updated “In Demand” technology skill designations, based on employer job postings from within each occupation, led to approximately 2,000 “In Demand” skill linkages across 439 occupations.
+Task statements for 39 occupations were revised to update language related to people with disabilities.
+Sample of Reported Titles for 52 occupations were updated based on a quality control review.
+O*NET 28.2 Database
+
+Related occupations were updated for all 923 data-level occupations.
+17 new technology skill linkages related to 9 occupations were identified from customer input.
+6 new tools used linkages related to 2 occupations were identified from customer input.
+Standard Error, Upper CI Bound, and Lower CI Bound metadata fields were expanded from 2 decimal places to 4.
+For additional details on the related occupations updates, see Updates to Related Occupations for the O*NET Program Using the O*NET 28.0 Database in our Reports and Documents area.
+
+Previous releases rounded Standard Error and other metadata to 2 decimal places, resulting in a rounded value of zero when the actual value was very small but greater than zero. This release increases the precision to 4 decimal places, providing additional clarity in these cases.
+
+O*NET 28.1 Database
+
+RIASEC Occupational Interest Profiles (OIPs) and high-point codes for all 923 data-level occupations were developed using machine learning.
+An updated listing of 162 “Hot Technologies,” based on employer job postings from across all occupations, resulted in 11,400+ occupation linkages.
+Updated “In Demand” technology skill designations, based on employer job postings from within each occupation, led to approximately 2,500 “In Demand” skill linkages across 489 occupations.
+90+ new technology skill linkages related to 75 occupations were identified from employer job postings.
+450+ alternate titles related to 237 occupations were added from a review of Registered Apprenticeship Programs (RAPs), customer input, and other sources.
+The Job Zone for 15-1211.00 (Computer Systems Analysts) was revised from Job Zone 3 to Job Zone 4 based on evaluation of contributing data used to assign Job Zones.
+To learn more about the successful effort to leverage advances in supervised machine learning to update the vocational interest information in the O*NET System, see: Using Machine Learning to Develop Occupational Interest Profiles and High-Point Codes for the O*NET System.
+
+O*NET 28.0 Database
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 90 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 90 occupations
+Addition and update of Training and Work Experience and Education data for 90 occupations
+Addition and update of Work Styles data for 90 occupations
+Addition and update of Job Zones data for 90 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 65 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 90 occupations
+O*NET 27.3 Database
+
+924 technology skill linkages related to 282 occupations were added from employer job postings.
+The Interests Illustrative Activities file was also updated to fix a typographical error.
+
+O*NET 27.2 Database
+
+Basic Occupational Interests added to the O*NET Content Model - a set of 41 more detailed and precise interest elements
+New file containing action and object keywords for each general (RIASEC) occupational interest
+New file linking each basic occupational interest to relevant general occupational interests
+New file containing illustrative work activities related to the general and basic occupational interests
+New file containing illustrative occupations linked to the general and basic occupational interests
+1,995 alternate titles related to 629 occupations were added from employer job postings and customer input.
+For additional details on the interests updates, see Updating Vocational Interests Information for the O*NET Content Model in our Reports and Documents area. Also see the documentation for each of the new files:
+
+RIASEC Keywords
+Basic Interests to RIASEC
+Interests Illustrative Activities
+Interests Illustrative Occupations
+O*NET 27.1 Database
+
+157 technology skills, related to 892 occupations via 10,707 linkages, were identified as “Hot Technologies” using an updated approach.
+2,515 technology skill linkages were identified as “In Demand” for 478 occupations.
+641 technology skill linkages related to 215 occupations were added from employer job postings.
+18 alternate titles related to 13 occupations were added from customer input and other sources.
+This release updates the approach to identifying “Hot Technologies” and introduces the concept of “In Demand” technology skills.
+
+Hot Technologies are software and technology requirements most frequently included across all employer job postings.
+In Demand technology skills are software and technology requirements frequently included in the employer job postings for a particular occupation.
+The purpose of the two designations is to enable O*NET customers to learn which technology skills employers in the US economy are presently emphasizing and searching for while recruiting employees. For additional details on the Hot Technology and In Demand designations, see Hot Technologies and In Demand Technology Skills within the O*NET System in our Reports and Documents area.
+
+O*NET 27.0 Database
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 80 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 80 occupations
+Addition and update of Training and Work Experience and Education data for 80 occupations
+Addition and update of Work Styles data for 80 occupations
+Addition and update of Job Zones data for 80 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 12 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 80 occupations
+O*NET 26.3 Database
+
+New related occupations were added for all 923 data-level occupations.
+51 technology skills related to 15 occupations were added from customer input.
+22 tools used related to 4 occupations were added from customer input.
+The newly added Related Occupations file replaces the “Career Changers Matrix” and “Career Starters Matrix” files, which have been removed from the database. These related occupations are developed using an approach which includes three important contributors to occupational similarity: what people in the occupations do, what they know, and what they are called.
+
+For additional details on the Related Occupations project, see Developing Related Occupations for the O*NET Program in our Reports and Documents area.
+
+O*NET 26.2 Database
+
+1,147 technology skills related to 509 occupations were added or updated by occupational analyst review.
+671 alternate titles related to 222 occupations were added from professional associations, customer input, and other sources.
+O*NET 26.1 Database
+
+112 alternate titles related to 13 occupations were added from professional associations and customer input.
+49 occupations were populated with Job Zone assignments.
+60 Level Scale Anchor descriptions were updated within the Knowledge and Generalized Work Activities domains.
+1,900 technology skills related to 586 occupations were added or updated from professional associations, customer input, and other sources.
+3,127 tools used related to 327 occupations were added or updated from professional associations, customer input, and other sources.
+20 Content Model element names and descriptions were updated with minor edits.
+For additional details on the Level Scale Anchors update, see O*NET Level Scale Anchor Updates: Knowledge and Generalized Work Activities in our Reports and Documents area.
+
+This release transitioned technology skills and tools information to an organizing structure based on the latest version of the United Nations Standard Products and Services Code (UNSPSC). For details, see UNSPSC Reference.
+
+In this release, the Content Model Reference file was updated to minimize wording and grammar differences between the O*NET Database and O*NET Questionnaires. These updates also affected other download files where element names or descriptions are included. For more information on the role of questionnaires in our data collection process, see O*NET Data Collection Overview.
+
+O*NET 26.0 Database
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 100 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 100 occupations
+Addition and update of Training and Work Experience and Education data for 100 occupations
+Addition and update of Work Styles data for 100 occupations
+Addition and update of Job Zones data for 100 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 238 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 402 occupations
+Update of Level Scale Anchors descriptions for 89 anchors in the Abilities and Skills domains
+For additional details on the Level Scale Anchors update, see O*NET Level Scale Anchor Updates: Abilities and Skills Domains in our Reports and Documents area.
+
+O*NET 25.3 Database
+
+907 technology skills related to 141 occupations were updated from employer job postings and other sources. Currently, 182 “hot technologies” are identified. This update includes information linked to 150 occupations which underwent a “spotlight” or detailed review by occupational analysts.
+252 alternate titles related to 139 occupations were added from employer job postings.
+O*NET 25.2 Database
+
+The 25.2 release of the O*NET database includes the identification of technology skills related to distance learning and remote training. During the current COVID pandemic, schools, teachers, students, families, and businesses often rely on a wide variety of emerging technologies to navigate the challenges of decentralized education and work environments. For an initial listing of over 50 related technology skills, see O*NET Resource Center — Distance Learning & Remote Training.
+
+O*NET Hot Technologies were also updated in this release, leading to the following database enhancements:
+
+1,206 technology skills related to 232 occupations were updated from employer job postings and other sources. Currently, 182 “hot technologies” are identified.
+15 tools used related to 4 occupations were updated from customer feedback.
+O*NET 25.1 Database – Updating the O*NET-SOC Taxonomy
+
+The O*NET-SOC 2019 taxonomy structure has been revised based on the transition to the 2018 SOC. The O*NET 25.1 Database, which incorporates the new O*NET-SOC taxonomy, includes 1,016 occupational titles, 923 of which represent O*NET data-level occupations.
+
+A technical report, Updating the O*NET-SOC Taxonomy: Incorporating the 2018 SOC Structure, is available which describes the new O*NET-SOC 2019 taxonomy structure. The overall relationship between the O*NET-SOC 2019 and the 2018 SOC is summarized. Code, title, or description changes that occurred from transitioning to the new 2018 SOC structure are detailed in the report. The new O*NET-SOC 2019 structure also includes four cybersecurity-related new and emerging occupations.
+
+For a graphical overview of the new structure see: About the O*NET-SOC 2019 Taxonomy
+
+Data from the O*NET 25.0 database (O*NET-SOC 2010) has been incorporated into the new O*NET-SOC 2019 taxonomy, including the new O*NET-SOC codes, titles, and descriptions. In the 25.1 release, taxonomy-related updates include:
+
+Addition of 62 O*NET-SOC 2019 occupations
+Update of O*NET-SOC codes, titles, and/or descriptions for 345 occupations
+Addition and update of Task Statements for 127 occupations
+Addition of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 53 occupations
+Addition of Work Styles data for 53 occupations
+Addition of Job Zones data for 53 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 127 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 127 occupations
+Addition and update of Technology Skills and Tools Used for 98 occupations
+A total of 874 occupations include data on Knowledge, Skills, Abilities, and other descriptors in this release. 53 of these occupations include data aggregated from one or more predecessor O*NET-SOC 2010 occupations. In these cases, data is marked with “Analyst - Transition” in the Domain Source column. Some ratings, including Education, Training, and Experience ratings, are not available. These occupations will be updated through the O*NET Data Collection program with data from job incumbents and occupation experts, replacing the transitional data in future releases of the O*NET Database.
+
+Apart from the taxonomy changes, alternate titles were added or revised for 370 occupations, as part of the ongoing effort to improve and update the O*NET Database.
+
+Overall, release 25.1 includes the following:
+
+Codes, titles, and descriptions for 1,016 O*NET-SOC 2019 occupations
+Task statements for 923 O*NET-SOC 2019 occupations in the O*NET Data Collection Plan
+Update of 821 O*NET-SOC 2019 occupations through the O*NET Data Collection program with data from job incumbents and occupational experts
+Addition of transitional data for 53 O*NET-SOC 2019 occupations, based on data previously collected through the O*NET Data Collection program
+Addition and update of Alternate Titles and Sample of Reported Titles for 497 occupations
+Addition and update of Technology Skills and Tools Used for 98 occupations
+Release 25.0 included the following:
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 100 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 100 occupations
+Addition and update of Training and Work Experience and Education data for 100 occupations
+Addition and update of Work Styles data for 100 occupations
+Addition and update of Job Zones data for 100 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 79 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 245 occupations
+Release 24.3 included the following:
+
+431 technology skills related to 167 occupations were updated from employer job postings. Currently, 175 “hot technologies” are identified.
+122 alternate titles related to 80 occupations were added from employer job postings and other sources.
+Release 24.2 included the following:
+
+New “Cross-Domain Linkages” section with linkages between:
+Abilities to relevant Work Activities;
+Abilities to relevant Work Context;
+Skills to relevant Work Activities;
+Skills to relevant Work Context.
+Removal of:
+“Tools and Technology” file, which was deprecated in the 23.2 release. Developers should use the Technology Skills and Tools Used files instead.
+“Green Occupations,” “Green Task Statements,” ”Green DWA Reference,” and “Tasks to Green DWAs.” Developers interested in retaining this information may continue to use the files as published in the 24.1 release, available on the Archived data releases page.
+441 technology skills related to 98 occupations were updated from employer job postings and other sources. Currently, 161 “hot technologies” are identified. This update includes information linked to 100 occupations which underwent a “spotlight” or detailed review by occupational analysts.
+162 alternate titles related to 103 occupations were added from employer job postings and other sources.
+Release 24.1 included the following:
+
+1,416 technology skills related to 322 occupations were updated from employer job postings and other sources. Currently, 161 “hot technologies” are identified. This update includes information linked to 100 occupations which underwent a “spotlight” or detailed review by occupational analysts.
+170 alternate titles related to 102 occupations were added from employer job postings and other sources.
+Release 24.0 included the following:
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 100 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 100 occupations
+Addition and update of Training and Work Experience and Education data for 100 occupations
+Addition and update of Work Styles data for 100 occupations
+Addition and update of Job Zones data for 100 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 63 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 299 occupations
+Release 23.3 included the following:
+
+197 technology skills related to 101 occupations were updated from employer job postings. Currently, 182 “hot technologies” are identified.
+209 alternate titles related to 118 occupations were added from employer job postings and other sources.
+Release 23.2 included the following:
+
+339 technology skills related to 133 occupations were updated from employer job postings and other sources. Currently, 186 “hot technologies” are identified.
+150 alternate titles related to 84 occupations were added from employer job postings and other sources.
+This release adds two new files, Technology Skills and Tools Used. Developers currently using the “Tools and Technology” file should transition to using these new files instead. The “Tools and Technology” file is deprecated and will be removed in a future release of the O*NET Database.
+
+Release 23.1 included the following:
+
+946 technology skills related to 197 occupations were updated from employer job postings. Currently, 192 “hot technologies” are identified.
+191 alternate titles related to 100 occupations were added from employer job postings and other sources.
+Release 23.0 included the following:
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 100 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 100 occupations
+Addition and update of Training and Work Experience and Education data for 100 occupations
+Addition and update of Work Styles data for 100 occupations
+Addition and update of Job Zones data for 100 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 33 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 294 occupations
+Release 22.3 included the following:
+
+460 technology skills related to 125 occupations were updated from employer job postings and other sources. Currently, 186 “hot technologies” are identified.
+273 alternate titles related to 120 occupations were added from employer job postings and other sources.
+Release 22.2 included the following:
+
+158 technology skills and 45 tools related to 83 occupations were updated from employer job postings and other sources. Currently, 178 “hot technologies” are identified.
+215 alternate titles related to 98 occupations were added from employer job postings and other sources.
+Release 22.1 included the following:
+
+408 technology skills and 88 tools related to 132 occupations were updated from employer job postings and other sources. This update includes information linked to 50 occupations with a bright outlook and/or apprenticeship opportunities which underwent a “spotlight” or detailed review by occupational analysts.
+352 alternate titles related to 151 occupations were added from employer job postings and other sources.
+Release 22.0 included the following:
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 100 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 100 occupations
+Addition and update of Training and Work Experience and Education data for 100 occupations
+Addition and update of Work Styles data for 100 occupations
+Addition and update of Job Zones data for 100 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 38 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 121 occupations
+Release 21.3 included the following:
+
+80 alternate titles related to 40 occupations were added from professional association and customer input, transactional analyses, and occupational code requests.
+80 technology skill examples related to 54 occupations were added from employer job postings.
+Release 21.2 included the following:
+
+343 alternate titles related to 140 occupations were added from employer job postings and other sources.
+69 technology skill examples and 7 tools used related to 59 occupations were added from employer job postings and other sources.
+Release 21.1 included the following:
+
+178 new technology examples related to 85 occupations were added from employer job postings and other sources.
+Sample of Reported Titles selections for 10 occupations were updated to reflect titles frequently reported by job incumbents.
+Release 21.0 included the following:
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 116 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 116 occupations
+Addition and update of Training and Work Experience and Education data for 116 occupations
+Addition and update of Work Styles data for 116 occupations
+Addition and update of Job Zones data for 116 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 56 occupations
+Addition and update of Alternate Titles and Sample of Reported Titles for 116 occupations
+121 new technologies are added across 134 occupations, including the identification of 17 additional "hot technologies"
+Release 20.3 included the following:
+
+626 new technology examples related to 144 occupations were added from employer job postings and other sources.
+30 new alternate titles related to 5 occupations were added from customer and professional association input.
+Release 20.2 included the following:
+
+857 new alternate titles related to 266 occupations were added from employer job postings and other sources.
+1,015 new technology examples related to 414 occupations were added from employer job postings and other sources.
+Release 20.1 included the following:
+
+Data from the Lay/Alternate Titles, Sample of Reported Titles, Related Occupations, Tools & Technology, and Emerging Tasks projects are now included in the O*NET Database. These were previously available as separate supplemental file downloads.
+769 new alternate titles related to 247 occupations were added from employer job postings and other sources.
+2,332 new technology examples related to 272 occupations were added from employer job postings.
+All database files can be downloaded in Microsoft Excel format, in addition to the existing formats of tab-delimited text, and SQL files for MySQL, Microsoft SQL Server, or Oracle.
+Release 20.0 included the following:
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 102 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 102 occupations
+Addition and update of Training and Work Experience and Education data for 102 occupations
+Addition and update of Work Styles data for 102 occupations
+Addition and update of Job Zones data for 102 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 56 occupations
+Release 19.0 included the following:
+
+Addition and update of Task Statement ratings (importance, relevance, and frequency) for 126 occupations
+Addition and update of Abilities, Skills, Work Activities, Knowledge, and Work Context data for 126 occupations
+Addition and update of Training and Work Experience and Education data for 126 occupations
+Addition and update of Work Styles data for 126 occupations
+Addition and update of Job Zones data for 126 occupations
+Addition and update of Detailed Work Activities (DWAs) and linkages for 126 occupations
+Release 18.1 contained the following:
+
+This release includes newly developed Detailed Work Activities (DWAs) data, along with broader Intermediate Work Activities (IWAs) and a separate set of Green DWAs. See the report Work Activities Project Technical Report for details (http://www.onetcenter.org/reports/DWA_2014.html).
+
+The 18.1 release contains five new files:
+
+DWA Reference.txt
+Green DWA Reference.txt
+IWA Reference.txt
+Tasks to DWAs.txt
+Tasks to Green DWAs.txt
+All other files are unchanged from the 18.0 release.
+
+Release 18.0 contained the following:
+
+Addition and update of Task Statement ratings (134 occupations)
+Addition and update of Abilities, Knowledge, Skills, Work Activities, and Work Context data (105 occupations)
+Addition and update of Education, Training and Work Experience data (105 occupations)
+Addition and update of Work Styles data (105 occupations)
+Addition and update of Interests data (83 occupations)
+Addition and update of Job Zones (105 occupations)
+Updated Occupation Level Metadata (105 occupations)
+Release 17.0 contained the following:
+
+Addition and update of Task Statement ratings (108 occupations)
+Addition and update of Abilities, Knowledge, Skills, Work Activities, and Work Context data (108 occupations)
+Addition and update of Education, Training and Work Experience data (108 occupations)
+Addition and update of Work Styles data (108 occupations)
+Addition and update of Work Values data (83 occupations)
+Addition and update of Job Zones (108 occupations)
+Updated Occupation Level Metadata (108 occupations)
+Update of Green Task Statements data (6 occupations)
+Release 16.0 contained the following:
+
+Addition and update of Task Statement ratings (107 occupations)
+Addition and update of Abilities, Knowledge, Skills, Work Activities, and Work Context data (107 occupations)
+Addition and update of Education, Training and Work Experience data (107 occupations)
+Addition and update of Work Styles data (107 occupations)
+Addition and update of Job Zones (107 occupations)
+Updated Occupation Level Metadata (107 occupations)
+New Occupational Level Metadata
+O*NET-SOC Eligible Expert Response Rate
+Addition of Green Occupations data (204 occupations)
+Addition of Green Task Statements data (140 occupations)
+O*NET Database 15.1 – Updating the O*NET-SOC Taxonomy
+
+The O*NET 15.1 Taxonomy Preview Database aligns the O*NET-SOC taxonomy with the 2010 SOC (Office of Management and Budget, 2010). Data from the O*NET 15.0 database (O*NET-SOC 2009) has been incorporated into the new O*NET-SOC 2010 taxonomy, including the new O*NET-SOC codes, titles, and descriptions. For 838 data-level occupations, the data remains unchanged from its publication in the O*NET 15.0 database. This occurs where the O*NET-SOC 2010 occupation is a clear successor of the O*NET-SOC 2009 occupation. There are 6 exceptional cases where data has been aggregated from one or more source occupations.
+
+Changes made to the O*NET 15.1 Database are summarized below. A historical summary of all database changes since the release of the O*NET 4.0 Database are provided in O*NET Database Content Changes 5.0 - 15.1. In the O*NET 15.1 Database, 545 occupations had changes to their code, title, and/or description that are reflected in the Occupational Data file.
+
+In 15.1, changes in the Domain Files fall into three categories:
+
+50 occupations with data in the 15.0 release have a new O*NET-SOC Code in the 2010 taxonomy. The data and metadata for these occupations are unchanged, but the O*NET-SOC Code field now reflects the latest taxonomy. These code changes impact all domain files, and also the Occupation Level Metadata file.
+6 exceptional occupations feature data aggregated from one or more occupations from the O*NET-SOC 2009 taxonomy. In these cases, “Recommend Suppress” and “Not Relevant” variables carry a “Y” value if ANY of the source occupations carried that value; no other metadata variables are included. Some data elements were not aggregated and are not present for these occupations, including all Education, Training, and Experience elements and all task ratings. These 6 occupations, listed below, will be updated through the O*NET Data Collection program with data from job incumbents and occupation experts.
+ 	13-1071.00	Human Resources Specialists
+ 	15-1143.00	Computer Network Architects
+ 	23-1012.00	Judicial Law Clerks
+ 	51-5112.00	Printing Press Operators
+ 	51-5113.00	Print Binding and Finishing Workers
+ 	51-9151.00	Photographic Process Workers and Processing Machine Operators
+26 occupations newly added in the 2010 taxonomy carry new task statements, but not task ratings. This includes the 6 exceptional occupations cited above. With these additional statements, all 974 occupations in the O*NET Data Collection Plan carry full task lists in the 15.1 release.
+ 	11-9013.02	Farm and Ranch Managers
+ 	11-9061.00	Funeral Service Managers
+ 	13-1071.00	Human Resources Specialists
+ 	13-1075.00	Labor Relations Specialists
+ 	13-1131.00	Fundraisers
+ 	13-2071.00	Credit Counselors
+ 	15-1143.00	Computer Network Architects
+ 	15-1152.00	Computer Network Support Specialists
+ 	21-1094.00	Community Health Workers
+ 	23-1012.00	Judicial Law Clerks
+ 	25-2051.00	Special Education Teachers, Preschool
+ 	25-2052.00	Special Education Teachers, Kindergarten and Elementary School
+ 	29-1125.01	Art Therapists
+ 	29-1125.02	Music Therapists
+ 	29-1128.00	Exercise Physiologists
+ 	29-2035.00	Magnetic Resonance Imaging Technologists
+ 	29-2057.00	Ophthalmic Medical Technicians
+ 	29-2099.05	Ophthalmic Medical Technologists
+ 	29-2099.07	Surgical Assistants
+ 	31-1014.00	Nursing Assistants
+ 	31-1015.00	Orderlies
+ 	31-9097.00	Phlebotomists
+ 	49-2021.00	Radio, Cellular, and Tower Equipment Installers and Repairers
+ 	51-5112.00	Printing Press Operators
+ 	51-5113.00	Print Binding and Finishing Workers
+ 	51-9151.00	Photographic Process Workers and Processing Machine Operators
+Release 15.1 contained the following:
+
+Codes, titles, and descriptions for 1,110 O*NET-SOC 2010 occupations
+Task statements for 974 O*NET-SOC 2010 occupations in the O*NET Data Collection Plan
+Update of 838 O*NET-SOC 2010 occupations through the O*NET Data Collection program with data from job incumbents and occupation experts
+Release 15.0 contained the following:
+
+Addition and update of Task Statement ratings (120 occupations)
+Addition and update of Abilities, Knowledge, Work Activities, and Work Context data (120 occupations)
+Addition and update of Education, Training and Work Experience data (120 occupations)
+Addition and update of Work Styles data (120 occupations)
+Addition and update of Job Zones (120 occupations)
+Updated Occupation Level Metadata (120 occupations)
+Addition and update of Skills data (853 occupations)
+O*NET Database 14.0 – Updating the O*NET-SOC Taxonomy
+
+The O*NET 14.0 database is the 1st database release to reflect the updated O*NET-SOC 2009 taxonomy. This taxonomy update is the second major change to the taxonomy since 2000 with its conversion to a SOC-based taxonomy (O*NET-SOC 2000). This new taxonomy contains an additional 153 New and Emerging (N&E) occupations. For more information about N&E, see New and Emerging Occupations of the 21st Century: Updating the O*NET-SOC Taxonomy (March, 2009). This report and an O*NET-SOC 2006 to 2009 “look-up” file are available for download from the O*NET Resource Center web site (http://www.onetcenter.org/taxonomy.html).
+
+Release 14.0 contained the following:
+
+Addition and update of Task Statement ratings (117 occupations)
+Addition and update of Abilities, Knowledge, Work Activities, and Work Context data (117 occupations)
+Addition and update of Education, Training and Work Experience data (117 occupations)
+Addition and update of Work Styles data (117 occupations)
+Addition and update of Job Zones (117 occupations)
+Updated Occupation Level Metadata (117 occupations)
+Addition and update of Interests and Work Values data (96 occupations)
+Release 13.0 contained the following:
+
+Addition and update of Task Statement ratings (106 occupations)
+Updated Abilities, Knowledge, Skills, Work Activities, and Work Context data (106 occupations)
+Additional Work Context data (106 occupations)
+Addition and update of Education, Training and Work Experience data (106 occupations)
+Addition and update of Work Styles data (106 occupations)
+Addition and update of Job Zones (108 occupations)
+Updated Occupation Level Metadata (106 occupations)
+Addition and update of Interests and Work Values data (812 occupations)
+Release 12.0 contained the following:
+
+Addition and update of Task Statement ratings (100 occupations)
+Updated Abilities, Knowledge, Skills, Work Activities, and Work Context data (100 occupations)
+Addition and update of Education, Training and Work Experience data (100 occupations)
+Addition and update of Work Styles data (100 occupations)
+Addition and update of Job Zones (101 occupations)
+Updated Occupation Level Metadata (100 occupations)
+Release 11.0 contained the following:
+
+Addition and update of Task Statement ratings (101 occupations)
+Updated Abilities, Knowledge, Skills, Work Activities, and Work Context data (101 occupations)
+Addition and update of Education, Training and Work Experience data (101 occupations)
+Addition and update of Work Styles data (101 occupations)
+Updated Job Zones (101 occupations)
+Updated Occupation Level Metadata (101 occupations)
+O*NET Database 10.0 – Updating the O*NET-SOC Taxonomy
+
+The O*NET 10.0 database was the 1st database release to reflect the updated O*NET-SOC 2006 taxonomy. This taxonomy update is the first major change to the taxonomy since 2000 with its conversion to a SOC-based taxonomy (O*NET-SOC 2000). A summary of this update and implementation of the O*NET-SOC 2006 taxonomy can be found in our Updating the O*NET-SOC Taxonomy Report (April, 2006). The report is available for download from the O*NET Resource Center site (http://www.onetcenter.org/reports/UpdatingTaxonomy.html).
+
+Release 10.0 contained the following:
+
+Addition of Task Statement ratings (100 occupations)
+Updated Abilities, Knowledge, Skills, Work Activities, and Work Context data (100 occupations)
+Addition of Education, Training and Work Experience data (100 occupations)
+Addition of Work Styles data (100 occupations)
+Updated Job Zones (100 occupations)
+Updated Occupation Level Metadata (100 occupations)
+Release 9.0 contained the following:
+
+Addition of Task Statement ratings (100 occupations)
+Updated Abilities, Knowledge, Skills, Work Activities, and Work Context data (100 occupations)
+Addition of Education, Training and Work Experience data (100 occupations)
+Addition of Work Styles data (100 occupations)
+Updated Job Zones (100 occupations)
+Updated Occupation Level Metadata (100 occupations)
+Release 8.0 contained the following:
+
+New and revised Task Statements (98 occupations)
+Addition of Task Statement ratings (100 occupations)
+Updated Abilities, Knowledge, Skills, Work Activities, and Work Context data (100 occupations)
+Addition of Education, Training and Work Experience data (100 occupations)
+Addition of Work Styles data (100 occupations)
+Updated Job Zones (100 occupations)
+Updated Occupation Level Metadata (100 occupations)
+Release 7.0 contained the following:
+
+Addition of Task Statement ratings (100 occupations)
+Updated Abilities, Knowledge, Skills, Work Activities, and Work Context data (100 occupations)
+Addition of Education, Training and Work Experience data (100 occupations)
+Addition of Work Styles data (100 occupations)
+Updated Job Zones (100 occupations)
+Updated Occupation Level Metadata (100 occupations)
+Release 6.0 contained the following:
+
+New and revised Task Statements (140 occupations)
+Addition of Task Statement ratings (126 occupations)
+Updated Abilities, Work Activities, Knowledge, Skills, and Work Context data (126 occupations)
+Addition of Training and Work Experience, and Education data (126 occupations)
+Addition of Work Styles data (126 occupations)
+Updated Job Zones (126 occupations)
+Addition of scale anchors for both the Work Context and for the Education, Training and Experience domains.
+Updated Occupation Level Metadata (126 occupations)
+Release 5.1 contained the following:
+
+New and Revised Task Statements (69 occupations)
+Updated Job Zones (54 occupations)
+Level Scale Anchors for Skills, Knowledge, Ability, and Work Activity Domains
+New Occupational Level Metadata
+O*NET-SOC Establishment Response Rate
+O*NET-SOC Employee Response Rate
+O*NET-SOC Case Completeness Rate
+Total Completes for O*NET-SOC
+New Occupational Level Distribution Statistics
+Data Collection Mode
+How long at Current Job
+Industry
+New Ratings Level Metadata
+Standard Error
+Lower 95% Confidence Interval Bound
+Upper 95% Confidence Interval Bound
+Sample Size
+Recommended Suppression
+“Not Relevant for the Occupation” flag
+O*NET Database 5.0 – First Data Collection Release
+
+The April 2003 release of the O*NET 5.0 Database represented the first database release to incorporate data from the data collection program. It was the first of planned semi-annual updates of the database to update all O*NET-SOC occupations.
+
+Release 5.0 contained the following:
+
+New and revised Task Statements (455 occupations)
+Addition of Task Statement ratings (54 occupations)
+Updated Abilities, Work Activities, Knowledge, Skills, and Work Context data (54 occupations)
+Addition of Training and Work Experience, and Education data (54 occupations)
+Addition of Work Styles data (54 occupations)
+Addition of metadata to the file structure to specify source of data and date of update
+Addition of Emerging Task Statements
+Addition of Detailed Work Activities
+O*NET Database 4.0 – Final Analyst Database
+
+The O*NET 4.0 database represents the final version of an “analyst ratings only” O*NET Database. The ratings for each of the 900+ O*NET-SOC occupations in the 4.0 database were developed by occupational analysts and every occupation contains ratings for the same range of descriptors. The ongoing O*NET data collection program is gradually replacing these original analyst ratings with ratings derived primarily from job incumbents, as well as, ratings from an updated analyst procedure. The database structure and content changes incorporated in 4.0 were made to make the database consistent with data collection program. For more details about these changes, please refer to Summary of O*NET 4.0 Content Model and Database (October 2001) (http://www.onetcenter.org/resData.html#summary)

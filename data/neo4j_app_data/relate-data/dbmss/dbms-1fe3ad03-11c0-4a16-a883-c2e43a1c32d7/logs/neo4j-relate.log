@@ -1,0 +1,61 @@
+﻿Powershell : Validating Neo4j configuration: C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\re
+late-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\conf\neo4j.conf
+Au caractère C:\Users\hp\AppData\Local\Neo4j\Relate\Cache\neo4j-start.ps1:11 : 1
++ Powershell -NoProfile -NonInteractive -NoLogo `
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Validating Neo4...conf\neo4j.conf:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+5 issues found.
+Warning: Use of deprecated setting 'dbms.windows_service_name'. It is replaced by 'server.windows_service_name'.
+Warning: Use of deprecated setting 'dbms.jvm.additional'. It is replaced by 'server.jvm.additional'.
+Warning: Use of deprecated setting 'dbms.memory.pagecache.size'. It is replaced by 'server.memory.pagecache.size'.
+Warning: Use of deprecated setting 'dbms.memory.heap.max_size'. It is replaced by 'server.memory.heap.max_size'.
+Warning: Use of deprecated setting 'dbms.memory.heap.initial_size'. It is replaced by 
+'server.memory.heap.initial_size'.
+
+Validating user Log4j configuration: C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-dat
+a\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\conf\user-logs.xml
+No issues found.
+
+Validating server Log4j configuration: C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-d
+ata\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\conf\server-logs.xml
+No issues found.
+
+Configuration file validation successful (with warnings).
+Directories in use:
+home:         C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7
+config:       C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\conf
+logs:         C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\logs
+plugins:      C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\plugins
+import:       C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\import
+data:         C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\data
+certificates: C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\certificates
+licenses:     C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\licenses
+run:          C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\run
+Starting Neo4j.
+2025-03-30 03:07:27.822+0000 INFO  Logging config in use: File 'C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\conf\user-logs.xml'
+2025-03-30 03:07:27.874+0000 INFO  The license agreement was accepted with environment variable NEO4J_ACCEPT_LICENSE_AGREEMENT=yes when the Software was started.
+
+
+2025-03-30 03:07:27.970+0000 WARN  Use of deprecated setting 'dbms.windows_service_name'. It is replaced by 'server.windows_service_name'.
+2025-03-30 03:07:27.970+0000 WARN  Use of deprecated setting 'dbms.jvm.additional'. It is replaced by 'server.jvm.additional'.
+2025-03-30 03:07:27.973+0000 WARN  Use of deprecated setting 'dbms.memory.pagecache.size'. It is replaced by 'server.memory.pagecache.size'.
+2025-03-30 03:07:27.973+0000 WARN  Use of deprecated setting 'dbms.memory.heap.max_size'. It is replaced by 'server.memory.heap.max_size'.
+2025-03-30 03:07:27.973+0000 WARN  Use of deprecated setting 'dbms.memory.heap.initial_size'. It is replaced by 'server.memory.heap.initial_size'.
+2025-03-30 03:07:27.976+0000 INFO  Starting...
+2025-03-30 03:07:35.567+0000 INFO  ======== Neo4j 5.24.0 ========
+2025-03-30 03:07:35.624+0000 INFO  This instance is ServerId{c0362753} (c0362753-6443-4f5b-b6ff-45d78991b496)
+2025-03-30 03:07:36.415+0000 INFO  Resolved endpoints with LIST{endpoints:'[localhost:5000]'} to '[localhost:5000]'
+2025-03-30 03:07:39.380+0000 INFO  Resolved endpoints with LIST{endpoints:'[localhost:5000]'} to '[localhost:5000]'
+2025-03-30 03:07:46.005+0000 INFO  Default database 'neo4j' is created
+2025-03-30 03:07:47.566+0000 INFO  Sending metrics to CSV file at C:\Users\hp\Desktop\Stella Maris\career-guidance-ai\data\neo4j_app_data\relate-data\dbmss\dbms-1fe3ad03-11c0-4a16-a883-c2e43a1c32d7\metrics
+2025-03-30 03:07:47.732+0000 INFO  Anonymous Usage Data is being sent to Neo4j, see https://neo4j.com/docs/usage-data/
+2025-03-30 03:07:47.746+0000 INFO  Bolt enabled on localhost:7687.
+2025-03-30 03:07:47.764+0000 INFO  Bolt (Routing) enabled on localhost:7688.
+2025-03-30 03:07:50.073+0000 INFO  HTTP enabled on localhost:7474.
+2025-03-30 03:07:50.080+0000 INFO  Remote interface available at http://localhost:7474/
+2025-03-30 03:07:50.123+0000 INFO  id: 734EA485D6BB8764D1134F21FB98D31CA7240C5448F1AAF31D4071D75EFB44FF
+2025-03-30 03:07:50.123+0000 INFO  name: system
+2025-03-30 03:07:50.123+0000 INFO  creationDate: 2025-03-30T03:07:41.638Z
+2025-03-30 03:07:50.124+0000 INFO  Started.

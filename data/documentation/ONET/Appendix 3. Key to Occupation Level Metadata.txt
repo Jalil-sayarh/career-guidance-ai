@@ -1,0 +1,73 @@
+Each O*NET-SOC Code has detailed information associated with the O*NET data collection called Occupation Level Metadata. The name and explanation for each data value in the item column is presented below. The O*NET-SOC Level Sample Distribution Statistics, that are provided in the Percent column of the Occupation Level Metadata file, are unweighted percents. Therefore, these values do not represent the estimated distribution of the O*NET-SOC population.
+
+Data Collection Mode - Incumbents and occupational experts had the option to complete the questionnaire either using a web-based survey or a paper survey. Valid responses are:
+
+Paper
+Web
+Employee Completeness Rate - The employee completeness rate for an occupation is the percentage of total returned non-blank questionnaires that were retained after editing and data cleaning.
+
+Employee Response Rate - The employee response rate is the percentage of eligible employees in the sample who return a non-blank questionnaire.
+
+Establishment Eligibility Rate - The establishment eligibility rate is the percentage of sampled establishments where the target establishment or a similar establishment in the same industry was found to be in operation at the sampled address.
+
+Establishment Response Rate - The establishment response rate is the percentage of sampled eligible establishments for the occupation that agreed to participate.
+
+How Long at Current Job - Incumbents indicated in the background questionnaire how long they had been in their current job. Valid responses are:
+
+10 years or more
+6-9 years
+1-5 years
+<1 year
+Missing
+How Much Experience Performing Work in this Occupation - Occupational experts indicated in the background questionnaire how much experience they have performing work in this occupation. Valid responses are:
+
+10+ years
+5-9 years
+3-4 years
+1-2 years
+<1 year
+Never
+Missing
+Industry Division (Major Group Codes (SIC) within Division in parentheses) - Each sampled establishment was assigned to one primary industry division in the sampling frame. The Major Industry Group Codes (SIC) within the Division are provided in parentheses. Valid responses are:
+
+Agriculture, Forestry, Fishing (01 - 09)
+Mining (10 - 14)
+Construction (15 - 17)
+Manufacturing (20 - 39)
+Transportation, Communication, Electric, Gas, and Sanitary Services (40 - 49)
+Wholesale Trade (50 -51)
+Retail Trade (52 - 59)
+Financial, Insurance and Real Estate (60 - 67)
+Services (70 - 89)
+Public Administration (91 - 97)
+Non-classifiable (99)
+North American Industry Classification System (NAICS) Sector - Each sampled establishment was assigned to one type of economic activity sector in the sampling frame. Valid responses are:
+
+Accommodation and food services
+Administrative and support and waste management and remediation services
+Agriculture, forestry, fishing and hunting
+Arts, entertainment, and recreation
+Construction
+Education services
+Finance and insurance
+Health care and social assistance
+Information
+Management of Companies and Enterprises
+Manufacturing
+Mining
+Other services, except public administration
+Professional, Scientific and Technical Services
+Public administration
+Real estate and rental and leasing
+Retail trade
+Transportation and warehousing
+Unclassified
+Utilities
+Wholesale trade
+OE Completeness Rate - The OE completeness rate for an occupation is the percentage of total returned non-blank questionnaire sets that were retained after editing and data cleaning.
+
+OE Response Rate - The OE response rate is the percentage of eligible experts selected for the occupation who return a non-blank questionnaire.
+
+SOC Eligibility Rate - The SOC eligibility rate is the percentage of eligible establishments where the target occupation was asked about and present at the sampled address.
+
+Total Completed Questionnaires – Total Completes refers to the total number of incumbents who completed one of the four questionnaire types.

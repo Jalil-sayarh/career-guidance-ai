@@ -1,0 +1,13 @@
+Rating Level Statistics
+
+For each of the Ability domain and Skills domain elements, additional rating level statistics, such as Standard Error and data flags are included to help provide a description of the quality of the data values. The file has columns to represent these additional values.
+
+The explanations for the Rating Level Statistics columns are explained in the following definitions.
+
+Standard Error - Standard errors were calculated to provide an indication of each estimate’s precision. The standard error of the mean (SEM) is the standard deviation of the ratings across analysts divided by the square root of the number of analysts (i.e., eight). Statistics with large standard errors are generally considered less precise than those with small standard errors.
+
+Upper CI Bound and Lower CI Bound - The standard error of the mean (SEM) was used to define a range (confidence interval) around the estimate. The upper and lower bounds of the 95% confidence interval establish this range such that over a large number of sample estimates the probability is .95 that the population mean will be included in a confidence interval of this size. The upper bound of the confidence interval is calculated by taking the SEM and multiplying it by 1.96 and adding that number to the observed mean. The lower bound of the confidence interval is calculated by taking the SEM and multiplying it by 1.96 and subtracting that number from the observed mean.
+
+Recommend Suppress - Users are encouraged to use estimates exhibiting “low precision” with caution and for many applications users are advised to consider suppressing these estimates. Abilities and Skills estimates are considered to have low precision if the standard error is greater than .51. The value of .51 was selected as a suppression criterion because 1.0/1.96 = .5102. An SEM of >.51 means that the upper and lower bounds of the confidence interval are more than 1 scale point away from the observed mean.
+
+Not Relevant –The ability or skill level rating is identified as “not relevant” if 0, 1, or 2 analysts rated importance for that ability ≥ 2 (i.e., six or more analysts rated importance a 1). A value of “Y” indicates 0, 1, or 2 analysts rated importance ≥ 2. A value of “N” indicates more than 2 analysts rated importance ≥ 2. Users are encouraged to provide their end-users with an indication that the item level rating is “not relevant” rather than displaying the level value or displaying no level information.
