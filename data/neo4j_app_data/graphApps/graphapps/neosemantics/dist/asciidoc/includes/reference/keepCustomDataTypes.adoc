@@ -1,1 +1,0 @@
-when set to true, all properties containing a custom data type will be saved as a string followed by their custom data type IRIs
