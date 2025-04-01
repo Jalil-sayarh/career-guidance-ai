@@ -1,0 +1,9 @@
+# Neo4j files
+data/neo4j_app_data/
+venv/Lib/site-packages/langchain/graphs/neo4j_graph.py
+venv/Lib/site-packages/langchain/memory/chat_message_histories/neo4j.py
+venv/Lib/site-packages/langchain/vectorstores/neo4j_vector.py
+venv/Lib/site-packages/langchain_community/chat_message_histories/neo4j.py
+venv/Lib/site-packages/langchain_community/graphs/neo4j_graph.py
+venv/Lib/site-packages/langchain_community/query_constructors/neo4j.py
+venv/Lib/site-packages/langchain_community/vectorstores/neo4j_vector.py
