@@ -1,8 +1,12 @@
 import os
 import re
 import logging
+import json
+import gzip
+import pickle
+from datetime import datetime
 from typing import List, Dict, Any, Optional
-import pandas as pd
+from concurrent.futures import ThreadPoolExecutor
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import FAISS
@@ -117,9 +121,46 @@ class CareerGuidanceRAG:
         self.llm = None
         self.conversation = None
         self.memory = ConversationBufferMemory()
+        
+        # Cache settings
+        self.query_embedding_cache = {}
+        self.max_cache_size = 1000
+        
+        # Usage statistics
+        self.usage_stats = {
+            "queries": 0,
+            "cache_hits": 0,
+            "cache_misses": 0,
+            "api_calls": 0,
+            "vector_store_size": 0,
+            "last_update": None
+        }
+        
+        # Try to load existing vector store
+        vector_store_path = os.getenv("VECTOR_STORE_PATH", "./vector_store")
+        if os.path.exists(vector_store_path):
+            try:
+                self.load_vector_store(vector_store_path)
+                logger.info("Loaded existing vector store")
+            except Exception as e:
+                logger.warning(f"Failed to load existing vector store: {str(e)}")
+                logger.info("Will create new vector store if needed")
+    
+    def cleanup_cache(self):
+        """Clean up old cache entries if cache is too large"""
+        if len(self.query_embedding_cache) > self.max_cache_size:
+            # Remove oldest entries
+            oldest_keys = list(self.query_embedding_cache.keys())[:-self.max_cache_size]
+            for key in oldest_keys:
+                del self.query_embedding_cache[key]
+            logger.info(f"Cleaned up {len(oldest_keys)} old cache entries")
     
     def load_data(self):
         """Load data from SQL files into the RAG engine"""
+        if self.vector_store is not None:
+            logger.info("Vector store already loaded, skipping data loading")
+            return
+            
         logger.info(f"Loading data from SQL files in {self.sql_directory}")
         
         # Get list of SQL files
@@ -128,14 +169,23 @@ class CareerGuidanceRAG:
             if file.endswith('.sql'):
                 sql_files.append(os.path.join(self.sql_directory, file))
         
-        # Process each SQL file
+        # Process each SQL file in parallel
         documents = []
-        for sql_file in sql_files:
-            text_content = SQLFileParser.extract_data_as_text(sql_file)
-            documents.append({
-                "content": text_content,
-                "source": os.path.basename(sql_file)
-            })
+        with ThreadPoolExecutor() as executor:
+            futures = []
+            for sql_file in sql_files:
+                future = executor.submit(SQLFileParser.extract_data_as_text, sql_file)
+                futures.append((future, os.path.basename(sql_file)))
+            
+            for future, source in futures:
+                try:
+                    text_content = future.result()
+                    documents.append({
+                        "content": text_content,
+                        "source": source
+                    })
+                except Exception as e:
+                    logger.error(f"Error processing {source}: {str(e)}")
         
         # Split documents into chunks
         text_splitter = RecursiveCharacterTextSplitter(
@@ -143,28 +193,48 @@ class CareerGuidanceRAG:
             chunk_overlap=200
         )
         
+        # Process chunks in parallel
         texts = []
         sources = []
+        with ThreadPoolExecutor() as executor:
+            futures = []
+            for doc in documents:
+                future = executor.submit(text_splitter.split_text, doc["content"])
+                futures.append((future, doc["source"]))
+            
+            for future, source in futures:
+                try:
+                    chunks = future.result()
+                    texts.extend(chunks)
+                    sources.extend([source] * len(chunks))
+                except Exception as e:
+                    logger.error(f"Error splitting chunks for {source}: {str(e)}")
         
-        for doc in documents:
-            chunks = text_splitter.split_text(doc["content"])
-            texts.extend(chunks)
-            sources.extend([doc["source"]] * len(chunks))
-        
-        # Create vector store
+        # Create embeddings for all texts at once
         embeddings = OpenAIEmbeddings(openai_api_key=self.openai_api_key)
-        
-        # Add metadata
         metadatas = [{"source": source} for source in sources]
         
-        logger.info(f"Creating vector store with {len(texts)} text chunks")
-        self.vector_store = FAISS.from_texts(
+        # Create embeddings for all texts
+        text_embeddings = embeddings.embed_documents(texts)
+        self.usage_stats["api_calls"] += 1
+        
+        # Create vector store with all embeddings at once
+        self.vector_store = FAISS.from_embeddings(
+            text_embeddings=text_embeddings,
             texts=texts,
-            embedding=embeddings,
             metadatas=metadatas
         )
         
-        logger.info("Vector store created successfully")
+        logger.info(f"Created vector store with {len(texts)} text chunks")
+        
+        # Save the vector store
+        vector_store_path = os.getenv("VECTOR_STORE_PATH", "./vector_store")
+        os.makedirs(os.path.dirname(vector_store_path), exist_ok=True)
+        self.save_vector_store(vector_store_path)
+        
+        # Update usage stats
+        self.usage_stats["vector_store_size"] = len(texts)
+        self.usage_stats["last_update"] = datetime.now().isoformat()
     
     def initialize_chat_engine(self):
         """Initialize the chat engine with the retriever"""
@@ -204,66 +274,101 @@ class CareerGuidanceRAG:
     
     def ask(self, question: str) -> str:
         """Ask a question to the RAG engine"""
-        logger.info(f"User question: {question}")
+        self.usage_stats["queries"] += 1
         
         try:
-            # Try to get relevant documents using the vector store directly
-            if not self.vector_store:
-                raise ValueError("Vector store not initialized. Please call load_data() first.")
-                
-            documents = self.vector_store.similarity_search(question, k=5)
-            context = "\n\n".join([doc.page_content for doc in documents])
+            # Check cache for query embedding
+            if question in self.query_embedding_cache:
+                self.usage_stats["cache_hits"] += 1
+                query_embedding = self.query_embedding_cache[question]
+            else:
+                self.usage_stats["cache_misses"] += 1
+                query_embedding = self.embeddings.embed_query(question)
+                self.query_embedding_cache[question] = query_embedding
+                self.cleanup_cache()
             
-            # Add context to memory
-            self.memory.save_context({"input": f"Using this context: {context}\n\n{question}"}, 
-                                     {"output": ""})
+            # Get relevant documents
+            documents = self.vector_store.similarity_search_with_score(
+                question,
+                k=5
+            )
             
-            # Generate the answer using the conversation
+            # Format context
+            context = "\n\n".join([doc.page_content for doc, _ in documents])
+            
+            # Generate response
             if not self.conversation:
                 self.initialize_chat_engine()
-                
+            
             response = self.conversation.predict(input=question)
             return response
             
         except Exception as e:
-            logger.error(f"Error with RAG approach: {str(e)}")
-            
-            # Simplest possible fallback - direct question to LLM
-            try:
-                if not self.llm:
-                    self.llm = ChatOpenAI(
-                        openai_api_key=self.openai_api_key,
-                        model_name="gpt-4",
-                        temperature=0
-                    )
-                
-                # Simple, direct approach without any complex chains
-                direct_prompt = f"""You are a career guidance AI assistant. 
-                
-Answer this question about careers and occupations as best you can:
-
-{question}"""
-                
-                response = self.llm.predict(direct_prompt)
-                return response
-                
-            except Exception as e2:
-                logger.error(f"Fallback failed: {str(e2)}")
-                return f"I apologize, but I encountered an error while processing your question. Please try asking in a different way."
+            logger.error(f"Error in ask method: {str(e)}")
+            return f"I apologize, but I encountered an error: {str(e)}"
     
     def save_vector_store(self, path: str):
-        """Save the vector store for future use"""
-        if not self.vector_store:
-            raise ValueError("Vector store not initialized. Please call load_data() first.")
+        """Save vector store with compression and version info"""
+        # Add version info
+        version_info = {
+            "version": "1.0",
+            "created_at": datetime.now().isoformat(),
+            "chunk_size": 1000,
+            "chunk_overlap": 200,
+            "num_chunks": self.usage_stats["vector_store_size"]
+        }
         
-        logger.info(f"Saving vector store to {path}")
-        self.vector_store.save_local(path)
+        # Save version info
+        with open(os.path.join(path, "version.json"), "w") as f:
+            json.dump(version_info, f)
+        
+        # Compress and save vector store data
+        data = {
+            "index": self.vector_store.index,
+            "docstore": self.vector_store.docstore,
+            "index_to_docstore_id": self.vector_store.index_to_docstore_id
+        }
+        
+        with gzip.open(os.path.join(path, "vector_store.pkl.gz"), "wb") as f:
+            pickle.dump(data, f)
     
     def load_vector_store(self, path: str):
-        """Load a previously saved vector store"""
-        logger.info(f"Loading vector store from {path}")
-        embeddings = OpenAIEmbeddings(openai_api_key=self.openai_api_key)
-        self.vector_store = FAISS.load_local(path, embeddings, allow_dangerous_deserialization=True)
+        """Load vector store with error recovery"""
+        try:
+            # Load version info
+            with open(os.path.join(path, "version.json"), "r") as f:
+                version_info = json.load(f)
+                logger.info(f"Loading vector store version {version_info['version']}")
+            
+            # Load compressed vector store
+            with gzip.open(os.path.join(path, "vector_store.pkl.gz"), "rb") as f:
+                data = pickle.load(f)
+            
+            # Reconstruct vector store
+            embeddings = OpenAIEmbeddings(openai_api_key=self.openai_api_key)
+            self.vector_store = FAISS(
+                embedding_function=embeddings,
+                index=data["index"],
+                docstore=data["docstore"],
+                index_to_docstore_id=data["index_to_docstore_id"]
+            )
+            
+            # Update usage stats
+            self.usage_stats["vector_store_size"] = version_info["num_chunks"]
+            self.usage_stats["last_update"] = version_info["created_at"]
+            
+        except Exception as e:
+            logger.error(f"Error loading vector store: {str(e)}")
+            # Try to recover by creating new vector store
+            self.load_data()
+            self.save_vector_store(path)
+    
+    def get_usage_stats(self) -> Dict[str, Any]:
+        """Get current usage statistics"""
+        return {
+            **self.usage_stats,
+            "cache_size": len(self.query_embedding_cache)
+        }
 
 
 def main():
